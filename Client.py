@@ -1,22 +1,16 @@
 # Import necessary libraries
 
 import streamlit as st
+import os
 from search_tree import get_icd_codes
 
-headers={
-    "authorization":st.secrets("OPENAIAPI_KEY"),
-    "content-type":"application/json"
-}
 # Set the webpage title
 st.set_page_config(page_title="Welcome to DigiScribe MedChat!")
    
 # Create a header element
 st.header("Welcome to DigiScribe MedChat!")
 
-headers={
-    "authorization" : st.secrets("OPENAPI_API_KEY"),
-    "content-type": "application/json"
-    }
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
 # Set the system prompt for the chatbot
 system_prompt = st.text_area(
