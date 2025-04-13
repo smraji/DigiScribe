@@ -9,6 +9,11 @@ st.set_page_config(page_title="Welcome to DigiScribe MedChat!")
 # Create a header element
 st.header("Welcome to DigiScribe MedChat!")
 
+headers={
+    "authorization" : st.secrets("API_KEY"),
+    "content-type": "application/json"
+    }
+
 # Set the system prompt for the chatbot
 system_prompt = st.text_area(
   label="System Prompt",
