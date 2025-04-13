@@ -4,10 +4,6 @@ import streamlit as st
 import os
 from search_tree import get_icd_codes
 
-headers={
-    "authorization":st.secrets("OPENAIAPI_KEY"),
-    "content-type":"application/json"
-}
 # Set the webpage title
 st.set_page_config(page_title="Welcome to DigiScribe MedChat!")
    
@@ -51,11 +47,6 @@ if user_prompt := st.chat_input("Your message here", key="user_input"):
     icdcodes=''
     for s in icd_codes:
         icdcodes +=' , '+s
-
-    headers={
-        "authorization": st.secrets("API_KEY"),
-        "content-type": "application/json"
-    }
 
     # Add LLM response to session state
     st.session_state.messages.append({"role": "assistant", "content":icdcodes})        
