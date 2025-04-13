@@ -31,7 +31,7 @@ client = OpenAI(api_key=<OPEN_AI_API_KEY>)
 #### Run the Application
 
 ```
-python Client.py  
+Streamlit run Client.py  
 
 ```
 #### Using the App
