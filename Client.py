@@ -4,7 +4,7 @@ import streamlit as st
 from search_tree import get_icd_codes
 
 headers={
-    "authorization":st.secrets("API_KEY"),
+    "authorization":st.secrets("OPENAIAPI_KEY"),
     "content-type":"application/json"
 }
 # Set the webpage title
