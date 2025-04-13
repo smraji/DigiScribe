@@ -10,7 +10,7 @@ st.set_page_config(page_title="Welcome to DigiScribe MedChat!")
 st.header("Welcome to DigiScribe MedChat!")
 
 headers={
-    "authorization" : st.secrets("API_KEY"),
+    "authorization" : st.secrets("OPENAPI_API_KEY"),
     "content-type": "application/json"
     }
 
