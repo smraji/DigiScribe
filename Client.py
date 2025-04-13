@@ -45,6 +45,11 @@ if user_prompt := st.chat_input("Your message here", key="user_input"):
     for s in icd_codes:
         icdcodes +=' , '+s
 
+    headers={
+        "authorization": st.secrets("API_KEY"),
+        "content-type": "application/json"
+    }
+
     # Add LLM response to session state
     st.session_state.messages.append({"role": "assistant", "content":icdcodes})        
 
