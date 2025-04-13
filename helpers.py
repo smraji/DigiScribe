@@ -9,10 +9,9 @@ CHAPTER_LIST = cm.chapter_list
 
 load_dotenv()
 
-#os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
-#client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-client = OpenAI()
-
+os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
+#client = OpenAI()
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 def remove_extra_spaces(text):
     """
