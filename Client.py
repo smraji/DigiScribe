@@ -21,7 +21,7 @@ system_prompt = st.text_area(
 # Initialize session state variables
 if "messages" not in st.session_state:
     st.session_state.messages = [
-         {"role": "assistant", "content": "How may I help you today?"}
+         {"role": "assistant", "content": "Can you type the clinical case notes to get the ICD Codes?"}
     ]
          
 if "current_response" not in st.session_state:
