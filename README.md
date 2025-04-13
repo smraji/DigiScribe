@@ -34,6 +34,15 @@ client = OpenAI(api_key=<OPEN_AI_API_KEY>)
 Streamlit run Client.py  
 
 ```
+
+### Accessing Demo Application  and Presentation
+
+Demo App Link : https://digiscribe-9yddqupanzft34vnatyblu.streamlit.app/
+
+Presentation : https://docs.google.com/presentation/d/1C0ltPk751WjfcOuT5vCfVFZeboKnTd1O/edit?usp=sharing&ouid=115531925957283463722&rtpof=true&sd=true
+
+
+
 #### Using the App
 * System prompt gives the context of the app aiding in helping the LLM in prompt construction
 * In user input box type the clinical notes entered generally by a medical doctor
